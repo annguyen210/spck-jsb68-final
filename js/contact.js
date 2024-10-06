@@ -35,3 +35,22 @@ function validateContactForm(username, email, phoneNum, message) {
       location.reload();
     }
   };
+
+// Get the button:
+  mybutton = document.getElementById("myBtn");
+  
+  //Khi người dùng cuộn xuống 20px từ đầu trang, hiển thị các nút
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction(){
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	  mybutton.style.display = "block";
+	} else {
+	  mybutton.style.display = "none";
+	}
+  }
+  //Khi người dùng nhấp vào nút,  chuyển lên đầu trang
+  function topFunction(){
+	document.body.scrollTop = 0; // For Safari
+	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }

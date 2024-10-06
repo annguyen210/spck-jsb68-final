@@ -36,7 +36,7 @@ function validateContactForm(username, email, phoneNum, message) {
     }
   };
 
-// Get the button:
+// Back to top:
   mybutton = document.getElementById("myBtn");
   
   //Khi người dùng cuộn xuống 20px từ đầu trang, hiển thị các nút
